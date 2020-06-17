@@ -1,0 +1,86 @@
+/* ALTERAR PARA TODOS OS ELEMENTOS */
+html * {
+    /* RESETAR A MARGEM */
+    margin: 0px;
+    /* LARGURA MÁXIMA DOS ELEMENTOS */
+    max-width: 100%;
+}
+
+body {
+    /* COR DE FUNDO */
+    background-color: #111111;
+}
+
+#logotipo {
+    /* LARGURA DO LOGOTIPO */
+    width: 300px;
+    /* MARGEM DO LOGOTIPO */
+    margin: 20px;
+}
+
+#menu {
+    background-color: #593806;
+    margin-bottom: 20px;
+    border-top: 10px solid #3f2702;
+    border-bottom: 10px solid #3f2702;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+        /*ALINHAMENTO CENTRAL DO TEXTO */
+    text-align: center;
+}
+
+#menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#menu a:hover{
+    color: crimson;
+    background-color: saddlebrown;
+}
+
+.principal {
+    /* ATIVAR O MODO GRID (LINHAS E COLUNAS) */
+    display: grid;
+
+    /* ELEMENTOS DENTRO DA CLASSE PRINCIPAL NO FORMATO DE 3 COLUNAS */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* ESPAÇAMENTO ENTRE COLUNAS E LINHAS DO GRID */
+    gap: 20px;
+}
+
+item {
+    /* COR DE FUNDO */
+    background-color: #CFA76E;
+    /* FONTE */
+    font-family: sans-serif;
+    /* LETRAS MAIÚSCULAS */
+    text-transform: uppercase;
+    /* MARGEM */
+    margin: 20px;
+    /* COR DA FONTE */
+    color: #593806;
+    /* BORDA SUPERIOR */
+    border-top: 5px solid #593806;
+    /* BORDAS ARREDONDADAS */
+    border-radius: 1%;
+    /* TEXTO CENTRALIZADO */
+    text-align: center;
+}
+
+.rodape {
+    background-color: #593806;
+    height: 100px;
+
+    /* HABILITAR O MODO DE LINHAS E COLUNAS */
+    display: grid;
+    /* ALINHAR NA HORIZONTAL */
+    justify-content: center;
+    /* ALINHAR NA VERTICAL */
+    align-items: center;
+}
